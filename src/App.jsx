@@ -5,7 +5,6 @@ import TentangSaya from "./pages/TentangSaya";
 import NotFound from "./pages/NotFound";
 import Kontak from "./pages/Kontak";
 import Navigasi from "../components/Navigasi";
-import ProfilPengguna from "./pages/ProfilPengguna";
 import DetailArtikel from "./pages/DetailArtikel";
 
 function App() {
@@ -17,7 +16,6 @@ function App() {
         <Route path="/tentang" element={<TentangSaya />} />
         <Route path="/kontak" element={<Kontak />} />
         <Route path="*" element={<NotFound />} />
-        <Route path="/profil/:username" element={<ProfilPengguna/>} />
         <Route path="/artikel/:id" element={<DetailArtikel />} />
       </Routes>
     </div>
